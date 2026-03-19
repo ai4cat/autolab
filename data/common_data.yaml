@@ -1,7 +1,8 @@
 # 多个视频轮播组
 
-video_group_platform:
-  id: video_platform_overview
+video_overview_platform:
+  id: overview
+  section_title: "Platform overview"
   cards:
     - video_src: "videos/h1.mp4"
       title: "Video1"
@@ -24,45 +25,64 @@ video_group_platform:
       text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
 
 
+video_synthesis:
+  id: synthesis
+  section_title: "Robotics-Driven High-Throughput Catalyst Synthesis"
+  cards:
+    - video_src: "videos/1-0.mp4"
+      title: "AI-Driven Robotic "
+      text: "AI-Driven Robotic Control Workflow with OpenClaw"
+
+    - video_src: "videos/1-1.mp4"
+      title: "Automated synthesis"
+      text: "Automated synthesis of the MOF-74 support"
+
+    - video_src: "videos/1-2.mp4"
+      title: "AI-Driven Robotic "
+      text: "Automated synthesis of the heterometallic La–Ce complex precursor"
+
+    - video_src: "videos/1-3.mp4"
+      title: "Host–guest encapsulation"
+      text: "Host–guest encapsulation"
+
+    - video_src: "videos/1-3.mp4"
+      title: "Autonomous"
+      text: "Autonomous sample transfer"
+
+    - video_src: "videos/1-5.mp4"
+      title: "Programmable"
+      text: "Programmable spatial calcination"
+
+
+video_electrocatalysis:
+  id: electrocatalysis
+  section_title: "Electrocatalysis"
+  cards:
+    - video_src: "videos/2-1.mp4"
+      title: "Robotics-Driven High-Throughput Electrochemical Performance Evaluations"
+      text: "Automated Catalyst Ink Preparation, Electrode Fabrication, High-Throughput RRDE Measurements, and Data Analysis"
+
+    - video_src: "videos/2-2.mp4"
+      title: "Robotics-Driven Device-Level Performance Validation (MEA)"
+      text: "Automated Assembly of Membrane Electrode Assemblies and Fuel Cell Testing"
+
+    - video_src: "videos/2-3.mp4"
+      title: "AI Agent-Assisted System Orchestration"
+      text: "Integrating automated synthesis, automated performance evaluation, LLM-driven literature mining, and high-throughput computation"
 
 
 
-# 定义多个轮播的数据
-#homepage:
-#  id: "featured-destinations"
-#  title: "热门目的地"
-#  subtitle: "探索世界各地的精彩"
-#  cardsPerView:
-#    desktop: 3
-#    tablet: 2
-#    mobile: 1
-#  cards:
-#    - image: "https://via.placeholder.com/350x200/FF6B6B/FFFFFF?text=🏔️+雪山"
-#      title: "雪山之巅"
-#      text: "征服高峰，感受云端之上的壮丽景色。"
-#      buttonText: "探索"
-#      buttonUrl: "/destinations/mountain"
-#    - image: "https://via.placeholder.com/350x200/4ECDC4/FFFFFF?text=🏖️+海滩"
-#      title: "阳光海滩"
-#      text: "白色沙滩，碧蓝海水，完美的度假胜地。"
-#      buttonText: "探索"
-#      buttonUrl: "/destinations/beach"
-#
-#products:
-#  id: "featured-products"
-#  title: "精选产品"
-#  subtitle: "为您推荐的热门商品"
-#  cardsPerView:
-#    desktop: 4
-#    tablet: 3
-#    mobile: 2
-#  cards:
-#    - image: "https://via.placeholder.com/350x200/3498db/FFFFFF?text=📱+手机"
-#      title: "智能手机"
-#      text: "最新款旗舰手机，性能强劲"
-#      buttonText: "查看详情"
-#      buttonUrl: "/products/phone"
-#
+video_thermocatalysis:
+  id: thermocatalysis
+  section_title: "Thermocatalysis"
+  cards:
+    - video_src: "videos/3-1.mp4"
+      title: "Robotics-Driven Fully Automated Thermocatalytic Platform"
+      text: "Enabling automated conversion of catalyst powders into engineering forms, fixed-bed packing, programmable pressure and temperature control, online product analysis, and catalytic performance evaluation using Fixed-Bed Reactor"
+
+
+
+
 
 
 

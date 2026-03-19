@@ -56,44 +56,67 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
 
 
 
-    {{ $carousel_data := site.Data.common_data.video_group_platform}}
-    {{ $group_id := $carousel_data.id }}
 
-    <!-- 视频展示 -->
-    <div class="row  section-title-row ">
-      <div class="col-7 col-md-9">
-        <h2 class="section-title">{{ .Params.section_titles.overview | markdownify }}</h2>
-      </div>
-      <div class="col-5 col-md-3">
 
-        {{/*
-        <!-- 基本属性 -->
-        data-carousel-target="轮播ID"     <!-- 指定要控制的轮播 -->
-        data-carousel-action="prev"       <!-- 操作类型: prev/next/go -->
-        data-carousel-index="2"           <!-- 当action="go"时，指定目标索引 -->
-        */}}
 
-        <div class="d-flex justify-content-center gap-3">
-          <!-- 尖角箭头 (Chevron) - 最常用 -->
-          <button class=" circle-arrow" data-carousel-target="{{$group_id}}" data-carousel-action="prev">
-            <i class="fa fa-arrow-left" ></i>
-          </button>
-          <!-- 右侧对应样式 -->
-          <button class="circle-arrow" data-carousel-target="{{$group_id}}" data-carousel-action="next">
-            <i class="fa fa-arrow-right" ></i>
-          </button>
+
+{{ $video_groups := slice
+      "video_overview_platform"
+      "video_synthesis"
+      "video_electrocatalysis"
+      "video_thermocatalysis"
+}}
+
+    {{ range $g_index, $g_item := $video_groups }}
+
+
+      {{ $carousel_data := index site.Data.common_data $g_item}}
+      {{ $group_id := $carousel_data.id }}
+
+      <!-- 视频展示 {{$group_id}} -->
+      <div id="{{$group_id}}" class="section-title-row">
+        <div class="row   ">
+          <div class="col-7 col-md-9">
+            <h2 class="section-title">{{ $carousel_data.section_title | markdownify }}</h2>
+          </div>
+          <div class="col-5 col-md-3">
+
+            {{/*
+          <!-- 基本属性 -->
+          data-carousel-target="轮播ID"     <!-- 指定要控制的轮播 -->
+          data-carousel-action="prev"       <!-- 操作类型: prev/next/go -->
+          data-carousel-index="2"           <!-- 当action="go"时，指定目标索引 -->
+          */}}
+
+            <div class="d-flex justify-content-center gap-3">
+              <!-- 尖角箭头 (Chevron) - 最常用 -->
+              <button class=" circle-arrow" data-carousel-target="{{$group_id}}" data-carousel-action="prev">
+                <i class="fa fa-arrow-left" ></i>
+              </button>
+              <!-- 右侧对应样式 -->
+              <button class="circle-arrow" data-carousel-target="{{$group_id}}" data-carousel-action="next">
+                <i class="fa fa-arrow-right" ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+
+          {{ partial "blocks/card_carousel.html" (dict
+          "carouselId" $group_id
+          "carouselData" $carousel_data
+          ) }}
+
         </div>
       </div>
-    </div>
 
-    <div class="">
+    {{ end }}
 
-      {{ partial "blocks/card_carousel.html" (dict
-          "carouselId" $group_id
-          "carouselData" site.Data.common_data.video_group_platform
-      ) }}
 
-    </div>
+
+
+
 
 
 
@@ -102,17 +125,17 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
 
 
     <!-- 图片展示 -->
-    <div class="  section-title-row ">
-      <h2 class="section-title">{{ .Params.section_titles.image | markdownify }}</h2>
-      <div class="home-images-gallery">
-        {{.Params.image_show_content | markdownify}}
-      </div>
+    <div id="image_gallery" class="section-title-row">
+        <h2 class="section-title">{{ .Params.section_titles.image | markdownify }}</h2>
+        <div class="home-images-gallery">
+          {{.Params.image_show_content | markdownify}}
+        </div>
     </div>
 
 
 
     <!-- 代表论文 -->
-    <div class="  section-title-row ">
+    <div id="publications"  class="  section-title-row ">
       {{- $query := first 3 site.Data.publications -}}
       {{- $query = sort $query "year" "desc" -}}
 
@@ -137,7 +160,7 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
 
 
     <!-- 联系 -->
-    <div class="  section-title-row ">
+    <div  id="contact"  class="  section-title-row ">
       <h2 class="section-title">{{ .Params.section_titles.contact | markdownify }}</h2>
       <!-- 联系信息网格 (名片格式) -->
       <div class="row home-content-wrap" style="padding: 1rem 0;">

@@ -6,11 +6,6 @@ type: home_index
 
 
 section_titles:
-  overview: Platform overview
-  
-  
-  
-  
   research: Research
   publication: Selected Publications
   image: Images
@@ -44,7 +39,7 @@ heroSlideBlock:
         align: left
         background:
           image:
-            filename: group_slides/g1.png
+            filename: group_slides/g3.png
             filters:
               brightness: 1 # 0.5 #1
           position: right
@@ -68,7 +63,7 @@ heroSlideBlock:
         align: left
         background:
           image:
-            filename: group_slides/g3.png
+            filename: group_slides/g1.png
             filters:
               brightness: 1 # 0.5 #1
           position: right

@@ -10,31 +10,31 @@ main:
 #    weight: 30
 
   - name: Overview
-    url: #overview
+    url: "#overview"
     weight: 40
 
   - name: Synthesis
-    url: #synthesis
+    url: "#synthesis"
     weight: 50
 
   - name: Electrocatalysis
-    url: #electrocatalysis
+    url: "#electrocatalysis"
     weight: 60
 
   - name: Thermocatalysis
-    url: #thermocatalysis
+    url: "#thermocatalysis"
     weight: 70
 
   - name: Image Gallery
-    url: #image_gallery
+    url: "#image_gallery"
     weight: 80
 
 
   - name: Publications
-    url: #publications
+    url: "#publications"
     weight: 90
 
 
   - name: Contact
-    url: #contact
+    url: "#contact"
     weight: 100
