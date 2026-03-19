@@ -1,0 +1,88 @@
+# 多个视频轮播组
+
+video_group_platform:
+  id: video_platform_overview
+  cards:
+    - video_src: "videos/h1.mp4"
+      title: "Video1"
+      text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
+
+    - video_src: "videos/h2.mp4"
+      title: "Video2"
+      text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
+
+    - video_src: "videos/h1.mp4"
+      title: "Video3"
+      text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
+
+    - video_src: "videos/h2.mp4"
+      title: "Video4"
+      text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
+
+    - video_src: "videos/h1.mp4"
+      title: "Video5"
+      text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
+
+
+
+
+
+# 定义多个轮播的数据
+#homepage:
+#  id: "featured-destinations"
+#  title: "热门目的地"
+#  subtitle: "探索世界各地的精彩"
+#  cardsPerView:
+#    desktop: 3
+#    tablet: 2
+#    mobile: 1
+#  cards:
+#    - image: "https://via.placeholder.com/350x200/FF6B6B/FFFFFF?text=🏔️+雪山"
+#      title: "雪山之巅"
+#      text: "征服高峰，感受云端之上的壮丽景色。"
+#      buttonText: "探索"
+#      buttonUrl: "/destinations/mountain"
+#    - image: "https://via.placeholder.com/350x200/4ECDC4/FFFFFF?text=🏖️+海滩"
+#      title: "阳光海滩"
+#      text: "白色沙滩，碧蓝海水，完美的度假胜地。"
+#      buttonText: "探索"
+#      buttonUrl: "/destinations/beach"
+#
+#products:
+#  id: "featured-products"
+#  title: "精选产品"
+#  subtitle: "为您推荐的热门商品"
+#  cardsPerView:
+#    desktop: 4
+#    tablet: 3
+#    mobile: 2
+#  cards:
+#    - image: "https://via.placeholder.com/350x200/3498db/FFFFFF?text=📱+手机"
+#      title: "智能手机"
+#      text: "最新款旗舰手机，性能强劲"
+#      buttonText: "查看详情"
+#      buttonUrl: "/products/phone"
+#
+
+
+
+
+
+
+
+
+
+
+section_repositories:
+  - name: "AI4C-catalyst"
+    desc: "AI-driven catalyst discovery framework with graph neural networks and high-throughput screening."
+    url: "https://github.com/ai4m2026/ai4m"
+
+  - name: "AI4C-catalyst"
+    desc: "AI-driven catalyst discovery framework with graph neural networks and high-throughput screening."
+    url: "https://github.com/ai4m2026/ai4m"
+
+  - name: "AI4C-catalyst"
+    desc: "AI-driven catalyst discovery framework with graph neural networks and high-throughput screening."
+    url: "https://github.com/ai4m2026/ai4m"
+

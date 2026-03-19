@@ -1,0 +1,58 @@
+{{- define "main" -}}
+
+{{ partial "page_header.html" . }}
+
+
+
+<div class="universal-wrapper mt-5 page-contacts">
+  {{ with .Content }}
+    <div class="article-style">{{ . }}</div>
+  {{ end }}
+
+
+
+  <!-- 联系信息网格 (名片格式) -->
+  <div class="row home-content-wrap" style="padding: 1rem 0;">
+
+    <div class=" col-12 col-md-4">
+      <div class="contact-item paper-item ">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <h4>{{.Params.email_info.name | markdownify }}</h4>
+        <p>{{.Params.email_info.email | markdownify }}<br>
+          <span style="color: #94a3b8; font-size: 0.85rem;">{{.Params.email_info.type | markdownify }}</span></p>
+        {{/*<p style="margin-top: 0.5rem;"><a href="mailto:pi.ai4c@pku.edu.cn">pi.ai4c@pku.edu.cn</a><br>
+          <span style="color: #94a3b8; font-size: 0.85rem;">PI 联系</span></p>*/}}
+      </div>
+    </div>
+
+
+
+
+    <div class=" col-12 col-md-4">
+      <div class="contact-item paper-item ">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h4>{{.Params.contact1_info.name | markdownify }}</h4>
+        <p>{{.Params.contact1_info.address | markdownify }}</p>
+      </div>
+    </div>
+
+
+
+
+    <div class=" col-12 col-md-4">
+
+      <div class="contact-item paper-item   ">
+        <div class="contact-icon"><i class="fas fa-map-pin"></i></div>
+        <h4>{{.Params.contact2_info.name | markdownify }}</h4>
+        <p>{{.Params.contact2_info.address | markdownify }}</p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</div>
+
+{{- end -}}

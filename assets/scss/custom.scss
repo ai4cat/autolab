@@ -1,0 +1,835 @@
+
+// Override this file to add your own SCSS styling.
+
+$max_width: 1440px;
+
+
+@font-face {
+  font-family: ByteSans;
+  font-weight: 400;
+  src: url(../fonts/ByteSans-Regular.ttf) format("truetype");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+}
+
+@font-face {
+  font-family: ByteSans;
+  font-weight: 500;
+  src: url(../fonts/ByteSans-Medium.ttf) format("truetype");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+}
+
+
+html, body {
+
+  //font-family: montserrat,PingFang SC,Microsoft YaHei,微软雅黑,STXihei,华文细黑,sans-serif;
+  //font-family: Microsoft YaHei,微软雅黑,STXihei,华文细黑,sans-serif;
+  font-family: ByteSans, Inter, Inter Placeholder, PingFang SC, PingFang TC, sans-serif;
+  color: #000;
+  background-color: #f2f2f2;
+  font-weight: normal;
+
+}
+
+
+
+
+
+#section-recent-works {
+  .card {
+    min-height: 480px;
+  }
+}
+
+
+
+
+.site-wrapper {
+  background: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: $max_width;
+  }
+
+  #navbar-main {
+    .container-xl {
+      max-width: 100%;
+      padding: 0 5rem;
+
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1001px) {
+  .universal-wrapper {
+    width: 1200px;
+  }
+}
+
+.universal-wrapper {
+  h1 {
+    text-align: left;
+
+  }
+  h2 {
+    border-left: 3px solid var(--accent-red);
+    padding-left: 1rem;
+    //font-size: 1.35rem;
+  }
+}
+
+
+
+#navbar-main .main-menu-item ul li .nav-link {
+  color: #000;
+}
+
+
+.navbar {
+  font-size: 1rem;
+  box-shadow: unset;
+  //border-bottom: 1px solid rgba(198, 40, 40, 0.1);
+  //margin: 1rem 0 0 0;
+  padding:  3rem 1rem;
+}
+
+
+
+.home-section:first-of-type {
+  padding-top: 0px;
+}
+.home-section {
+  padding: 1rem 0;
+}
+
+
+
+
+.carousel-control-next, .carousel-control-prev {
+  display: none;
+}
+
+
+
+#section-home-content {
+  .home-content-wrap {
+    padding: 2rem 6rem;
+  }
+}
+
+.home-content-wrap {
+
+  .carousel-indicators {
+    display: none !important;
+  }
+
+  /* 核心能力展示 (卡片浅色但保留红黑点缀) */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    letter-spacing: 3px;
+    color: #1a1a1a;
+  }
+
+  .section-title-row {
+    border-top: 1px solid lightgrey;
+    padding-top: 3rem;
+    margin-top: 3rem;
+  }
+
+
+
+  .home-images-gallery {
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.2rem;
+      margin: 2rem 0 4rem;
+
+      .gallery-item {
+        aspect-ratio: 1 / 1;
+        background-size: cover;
+        background-position: center;
+        background-color: #e0e0e0;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        transition: 0.3s;
+        filter: grayscale(20%);
+        display: flex;
+        align-items: flex-end;
+        padding: 0.8rem;
+        color: white;
+        font-weight: 600;
+        text-shadow: 0 2px 6px black;
+        box-shadow: inset 0 -40px 30px -20px rgba(0,0,0,0.5);
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.02);
+        border-color: var(--accent-red);
+        filter: grayscale(0%);
+        box-shadow: 0 0 20px rgba(198,40,40,0.3);
+      }
+
+      .character-desc {
+        background: #f7f7f7;
+        color: #333333;
+        padding: 0.2rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        backdrop-filter: none;
+        z-index: 10;
+        text-shadow: none;
+        font-weight: normal;
+      }
+    }
+
+  }
+
+
+
+  /* 代表论文 (浅色卡片+红) */
+  .papers-grid {
+    display: flex;
+    gap: 2rem;
+    margin: 2.5rem 0 4rem;
+    flex-wrap: wrap;
+  }
+
+  .paper-item {
+    flex: 1;
+    min-width: 260px;
+    background: #fafafa;
+    border-radius: 18px;
+    padding: 2rem 1.8rem;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 5px 15px rgba(198,40,40,0.08);
+    transition: 0.3s;
+  }
+
+  .paper-item:hover {
+    border-color: var(--accent-red);
+    box-shadow: 0 0 25px rgba(198,40,40,0.2);
+  }
+
+  .paper-venue {
+    color: var(--accent-red);
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+  }
+
+  .paper-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0.8rem 0 1rem;
+    line-height: 1.3;
+    color: #1e1e1e;
+  }
+
+  .paper-authors {
+    color: #666;
+    font-size: 0.9rem;
+    border-left: 2px solid #999999;
+    padding-left: 1rem;
+  }
+
+
+
+  .contact-item{
+    min-height: 20rem;
+    margin-bottom: 1rem;
+    background: #f9fbfd;
+  }
+
+  .contact-icon {
+    width: 48px;
+    height: 48px;
+    background: #ffebee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    color: var(--accent-red);
+    font-size: 1.3rem;
+  }
+
+}
+
+
+
+.wg-home-slide {
+  background-color: #ffffff;
+  .carousel-item {
+    height: 700px;
+  }
+
+  .carousel-inner .wg-hero {
+    margin-left: 2rem !important;
+  }
+
+  .hero-title {
+    //color: #000000 !important;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+  }
+  .hero-lead {
+    //color: #00000080 !important;
+    font-size: 1rem;
+  }
+
+
+}
+
+
+
+.page-publication-list{
+  .paper-item {
+    border-top: 1px solid #e2e8f0;
+    padding: 3rem 0;
+  }
+  .pub-icon {
+    color: var(--accent-red);
+  }
+  .pub-title{
+    font-weight: bold;
+  }
+}
+
+
+.page-contacts{
+  .contact-item{
+    min-height: 20rem;
+    margin-bottom: 1rem;
+    background: #f9fbfd;
+  }
+
+  .contact-icon {
+    width: 48px;
+    height: 48px;
+    background: #ffebee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    color: var(--accent-red);
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+// =========================================卡片轮播全局样式 START =========================================
+/***
+卡片轮播全局样式
+
+响应式支持：
+
+桌面端（>768px）：每行显示3张卡片
+
+平板（576px-768px）：每行显示2张卡片
+
+手机（<576px）：每行显示1张卡片
+
+窗口大小改变时会自动调整显示数量
+
+**/
+
+
+/* 卡片轮播全局样式 */
+.card-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.card-carousel {
+  position: relative;
+  padding: 0  ; /* 给箭头留空间 */
+}
+
+.card-carousel .carousel-inner {
+  overflow: hidden;
+}
+
+.card-carousel .carousel-inner .row {
+  display: flex;
+  flex-wrap: nowrap; /* 防止换行 */
+  transition: transform 0.5s ease; /* 平滑滑动效果 */
+}
+
+.card-carousel .carousel-item {
+  display: block !important; /* 覆盖Bootstrap默认样式 */
+  flex-shrink: 0;
+  width: 100%;
+}
+
+/* 卡片列样式 - 基础宽度由JS动态计算，这里只设置内边距 */
+.card-carousel .col-card {
+  flex: 0 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* 卡片美化 */
+.card-carousel .card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+  height: 100%;
+  background: white;
+  margin-bottom: 15px;
+}
+
+.card-carousel .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.card-carousel .card-img-top {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-carousel .card-body {
+  padding: 0.5rem 0.5rem;
+  text-align: left;
+}
+
+.card-carousel .card-title {
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.5rem;
+  // margin-bottom: 1.2rem;
+}
+
+.card-carousel .card-text {
+  color: #000000b3;
+  padding: 0;
+  font-size: 1.2rem;
+
+}
+
+.card-carousel .btn-outline-primary {
+  border-radius: 30px;
+  padding: 6px 20px;
+  font-size: 0.9rem;
+  border-width: 2px;
+  color: #3498db;
+  border-color: #3498db;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.card-carousel .btn-outline-primary:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* 自定义箭头样式 - 修正版 */
+.card-carousel .carousel-control-prev,
+.card-carousel .carousel-control-next {
+  width: 44px;
+  height: 44px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.card-carousel .carousel-control-prev {
+  left: 0;
+}
+
+.card-carousel .carousel-control-next {
+  right: 0;
+}
+
+.card-carousel .carousel-control-prev:hover,
+.card-carousel .carousel-control-next:hover {
+  background: #3498db;
+  box-shadow: 0 5px 15px rgba(52,152,219,0.4);
+}
+
+/* 箭头图标 - 使用内联SVG确保始终可见 */
+.card-carousel .carousel-control-prev-icon,
+.card-carousel .carousel-control-next-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60% 60%;
+}
+
+/* 左侧箭头图标 (使用base64 SVG) */
+.card-carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%233498db' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+/* 右侧箭头图标 */
+.card-carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%233498db' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+/* 悬停时箭头颜色变白 */
+.card-carousel .carousel-control-prev:hover .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.card-carousel .carousel-control-next:hover .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+.card-carousel{
+
+  .video-item-wrap {
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+    //background-color: #0d1117;
+    //
+    // height: 20rem;
+    border-radius: 1.8rem;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      max-height: unset;
+    }
+
+    /*实现"video元素有controls属性，但鼠标放上去才显示"的关键代码：*/
+    /* 核心代码 - 直接复制 */
+    video::-webkit-media-controls {
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+
+    video:hover::-webkit-media-controls {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Firefox支持 */
+    video::-moz-range-track {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    video:hover::-moz-range-track {
+      opacity: 1;
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+      /* 触摸设备（手机/平板） */
+      video::-webkit-media-controls {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+      }
+    }
+
+    /* ===== 或者使用JS检测移动端 ===== */
+    .mobile-device video::-webkit-media-controls {
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+
+  }
+
+  .carousel-arrows {
+    display: none;
+    .carousel-control-prev, .carousel-control-next {
+      //position: relative;
+    }
+  }
+
+  .card {
+    box-shadow: unset;
+  }
+  .card:hover {
+    box-shadow: unset;
+    transform: unset;
+  }
+
+
+  .c-video-subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .c-sub-arrow{
+      display: none;
+      cursor: pointer;
+    }
+    .arrow-45-1 {
+      transform: rotate(-45deg);
+    }
+    .arrow-45-1:hover {
+      transform: rotate(0);
+    }
+  }
+
+}
+
+
+/* 指示器样式 */
+.card-carousel .carousel-indicators {
+  position: static;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.card-carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bdc3c7;
+  margin: 0 6px;
+  opacity: 1;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-indent: -9999px;
+  border: none;
+}
+
+.card-carousel .carousel-indicators li.active {
+  background-color: #3498db;
+}
+
+
+
+/* 基础圆形箭头样式 - 直接复制使用 */
+.circle-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-right: 1rem;
+  background: rgba(0, 0, 0, .05); /* #e0e0e0; */  /* 灰色背景 */
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;  /* 箭头颜色深灰 */
+  // box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.circle-arrow i {
+  font-size: 1rem;
+  line-height: 1;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* hover状态 - 灰色加深 */
+.circle-arrow:hover {
+  // background: #b0b0b0;  /* 更深的灰色 */
+  background: rgba(0, 0, 0, 0.1);  /* 更深的灰色 */
+  // transform: scale(1.05);
+  //box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.circle-arrow:hover i {
+  color: #111;  /* 箭头更深 */
+}
+
+/* 禁用状态 */
+.circle-arrow:disabled,
+.circle-arrow.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
+
+
+
+/* 全屏样式 - 确保视频在全屏时居中显示 */
+.video-hover-container:fullscreen,
+.video-hover-container:-webkit-full-screen,
+.video-hover-container:-moz-full-screen,
+.video-hover-container:-ms-fullscreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.video-hover-container:fullscreen video,
+.video-hover-container:-webkit-full-screen video,
+.video-hover-container:-moz-full-screen video,
+.video-hover-container:-ms-fullscreen video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* 保持视频比例，完整显示 */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* 或者使用 object-fit: cover 来填满屏幕（可能会裁剪视频） */
+.video-hover-container.fullscreen-cover:fullscreen video {
+  object-fit: cover;
+}
+
+/* 全屏时的控制按钮样式 */
+.video-hover-container:fullscreen .custom-controls,
+.video-hover-container:-webkit-full-screen .custom-controls {
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .card-carousel {
+    padding: 0 40px;
+  }
+
+  .card-carousel .carousel-control-prev,
+  .card-carousel .carousel-control-next {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-carousel {
+    padding: 0 35px;
+  }
+
+  .card-carousel .carousel-control-prev,
+  .card-carousel .carousel-control-next {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
+
+// =========================================卡片轮播全局样式 END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 页脚点缀 */
+.footer {
+  padding: 2rem 4rem;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  color: #666;
+  background: #ffffff;
+}
+
+.site-footer .powered-by {
+  display: none;
+}
+
+
+// 手机
+@media (max-width: 478px) {
+  .navbar-brand {
+    margin: 0 auto;
+  }
+
+
+
+  .site-wrapper {
+    margin: 0;
+    width: 100%;
+    box-shadow: unset;
+    border-radius: 0;
+  }
+
+
+  .wg-home-slide {
+    .carousel-item {
+      height: 450px;
+    }
+    .hero-title {
+    }
+  }
+
+  #section-home-content .home-content-wrap {
+    padding: 1rem ;
+  }
+
+  .home-content-wrap {
+    .home-images-gallery {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+}
+
+
+
+

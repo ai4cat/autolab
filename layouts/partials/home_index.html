@@ -1,0 +1,196 @@
+
+
+
+{{/*
+jQuery轮播效果（Carousell）
+注意 prev nextl 两个button的href id 和 setction id要一致
+https://blog.csdn.net/chenmo2001/article/details/117674446
+*/}}
+{{ $slider_hash_id := "hero_sliders" }}
+{{ $slider_args := dict "wcPage" $ "wcBlock" .Params.heroSlideBlock "wcIdentifier" $slider_hash_id }}
+<section  id="section-home-slide" class="home-section wg-home-slide">
+
+
+  {{/*<div class="container">
+    <div class="row">
+      <div class="col-12  hero-media carousel slide " data-ride="carousel"  id="{{ $slider_hash_id }}">
+        {{ partial "blocks/slider.html" $slider_args }}
+      </div>
+
+    </div>
+  </div>*/}}
+
+
+  <div class="  hero-media carousel slide " data-ride="carousel"  id="{{ $slider_hash_id }}">
+    {{ partial "blocks/slider.html" $slider_args }}
+  </div>
+
+
+</section>
+
+
+
+
+
+
+
+{{/*  lab 介绍  */}}
+{{ $heroBlock := .Params.heroBlock }}
+{{/*<section  id="section-hero" class="home-section wg-hero" >
+  <div class="container">
+    <div class="row">
+      <div class="col-12 hero-title" >{{ $heroBlock.content.title | markdownify }}</div>
+    </div>
+    <div class="row"
+      <div class="col-12 hero-desc-txt" >*/}}{{/* $heroBlock.content.text | markdownify */}}{{/*</div>
+    </div>
+  </div>
+</section>*/}}
+
+
+<div id="section-home-content" class="home-section ">
+
+
+  <div class="home-content-wrap ">
+
+
+
+
+    {{ $carousel_data := site.Data.common_data.video_group_platform}}
+    {{ $group_id := $carousel_data.id }}
+
+    <!-- 视频展示 -->
+    <div class="row  section-title-row ">
+      <div class="col-7 col-md-9">
+        <h2 class="section-title">{{ .Params.section_titles.overview | markdownify }}</h2>
+      </div>
+      <div class="col-5 col-md-3">
+
+        {{/*
+        <!-- 基本属性 -->
+        data-carousel-target="轮播ID"     <!-- 指定要控制的轮播 -->
+        data-carousel-action="prev"       <!-- 操作类型: prev/next/go -->
+        data-carousel-index="2"           <!-- 当action="go"时，指定目标索引 -->
+        */}}
+
+        <div class="d-flex justify-content-center gap-3">
+          <!-- 尖角箭头 (Chevron) - 最常用 -->
+          <button class=" circle-arrow" data-carousel-target="{{$group_id}}" data-carousel-action="prev">
+            <i class="fa fa-arrow-left" ></i>
+          </button>
+          <!-- 右侧对应样式 -->
+          <button class="circle-arrow" data-carousel-target="{{$group_id}}" data-carousel-action="next">
+            <i class="fa fa-arrow-right" ></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+
+      {{ partial "blocks/card_carousel.html" (dict
+          "carouselId" $group_id
+          "carouselData" site.Data.common_data.video_group_platform
+      ) }}
+
+    </div>
+
+
+
+
+
+
+
+    <!-- 图片展示 -->
+    <div class="row  section-title-row ">
+      <h2 class="section-title">{{ .Params.section_titles.image | markdownify }}</h2>
+      <div class="home-images-gallery">
+        {{.Params.image_show_content | markdownify}}
+      </div>
+    </div>
+
+
+
+    <!-- 代表论文 -->
+    <div class="row  section-title-row ">
+      {{- $query := first 3 site.Data.publications -}}
+      {{- $query = sort $query "year" "desc" -}}
+
+
+      <h2 class="section-title">{{ .Params.section_titles.publication | markdownify }}</h2>
+      <div class="papers-grid">
+
+        {{ range $index, $item := $query }}
+
+
+          <div class="paper-item">
+            <span class="paper-venue">{{ $item.journal | markdownify | safeHTML}} · {{$item.year}}</span>
+            <div class="paper-title">{{ $item.title | markdownify | safeHTML}}</div>
+            <div class="paper-authors">{{ $item.authors_text | markdownify | safeHTML}}</div>
+          </div>
+
+        {{ end }}
+
+      </div>
+    </div>
+
+
+
+    <!-- 代表论文 -->
+    <div class="row  section-title-row ">
+      <h2 class="section-title">{{ .Params.section_titles.contact | markdownify }}</h2>
+      <!-- 联系信息网格 (名片格式) -->
+      <div class="row home-content-wrap" style="padding: 1rem 0;">
+
+        <div class=" col-12 col-md-4">
+          <div class="contact-item paper-item ">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <h4>{{.Params.email_info.name | markdownify }}</h4>
+            <p>{{.Params.email_info.email | markdownify }}<br>
+              <span style="color: #94a3b8; font-size: 0.85rem;">{{.Params.email_info.type | markdownify }}</span></p>
+            {{/*<p style="margin-top: 0.5rem;"><a href="mailto:pi.ai4c@pku.edu.cn">pi.ai4c@pku.edu.cn</a><br>
+          <span style="color: #94a3b8; font-size: 0.85rem;">PI 联系</span></p>*/}}
+          </div>
+        </div>
+
+
+
+
+        <div class=" col-12 col-md-4">
+          <div class="contact-item paper-item ">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h4>{{.Params.contact1_info.name | markdownify }}</h4>
+            <p>{{.Params.contact1_info.address | markdownify }}</p>
+          </div>
+        </div>
+
+
+
+
+        <div class=" col-12 col-md-4">
+
+          <div class="contact-item paper-item   ">
+            <div class="contact-icon"><i class="fas fa-map-pin"></i></div>
+            <h4>{{.Params.contact2_info.name | markdownify }}</h4>
+            <p>{{.Params.contact2_info.address | markdownify }}</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+</div>
+
+
+
