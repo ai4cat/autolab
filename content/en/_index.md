@@ -39,7 +39,7 @@ heroSlideBlock:
         align: left
         background:
           image:
-            filename: group_slides/g3.png
+            filename: group_slides/g1.png
             filters:
               brightness: 1 # 0.5 #1
           position: right
@@ -56,6 +56,18 @@ heroSlideBlock:
               brightness: 1 # 0.5 #1
           position: right
           color: '#666'  
+
+ 
+      - title: "AI4C for Autonomous Catalyst Discovery" # desc-title1
+        content:  "An interactive visual companion featuring the robotic platform, experimental workflow, and key moments behind the paper" # desc1
+        align: left
+        background:
+          image:
+            filename: group_slides/g3.png
+            filters:
+              brightness: 1 # 0.5 #1
+          position: right
+          color: '#666'  
  
 
       - title: "AI4C for Autonomous Catalyst Discovery" # desc-title1
@@ -63,12 +75,48 @@ heroSlideBlock:
         align: left
         background:
           image:
-            filename: group_slides/g1.png
+            filename: group_slides/g6.png
             filters:
               brightness: 1 # 0.5 #1
           position: right
           color: '#666'  
  
+
+      - title: "AI4C for Autonomous Catalyst Discovery" # desc-title1
+        content:  "An interactive visual companion featuring the robotic platform, experimental workflow, and key moments behind the paper" # desc1
+        align: left
+        background:
+          image:
+            filename: group_slides/g7.png
+            filters:
+              brightness: 1 # 0.5 #1
+          position: right
+          color: '#666'  
+ 
+
+
+      - title: "AI4C for Autonomous Catalyst Discovery" # desc-title1
+        content:  "An interactive visual companion featuring the robotic platform, experimental workflow, and key moments behind the paper" # desc1
+        align: left
+        background:
+          image:
+            filename: group_slides/g9.jpg
+            filters:
+              brightness: 1 # 0.5 #1
+          position: right
+          color: '#666'  
+ 
+
+      - title: "AI4C for Autonomous Catalyst Discovery" # desc-title1
+        content:  "An interactive visual companion featuring the robotic platform, experimental workflow, and key moments behind the paper" # desc1
+        align: left
+        background:
+          image:
+            filename: group_slides/g10.jpg
+            filters:
+              brightness: 1 # 0.5 #1
+          position: right
+          color: '#666'  
 
   design:
     # Slide height is automatic unless you force a specific height (e.g. '400px')
