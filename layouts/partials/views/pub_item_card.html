@@ -9,25 +9,27 @@
       {{ $item.journal | markdownify | safeHTML}} ({{$item.year}})
     </div>
     {{ if $item.links}}
-      <div class="pub-links">
-        {{ range $item.links }}
-          {{- $url := .url -}}
-          {{- if eq .link_type "local" -}}
-            {{- $url = .url | relURL -}}
-          {{- end -}}
-          <a class="btn btn-outline-primary btn-sm" target="_blank" href="{{ $url }}" 
-             style="font-size: 0.8rem; padding: 0.25rem 0.5rem;">
-
-    📎 DOI      
+    <div class="pub-links">
+      {{ range $item.links }}
+      {{- $url := .url -}}
+      {{- if eq .link_type "local" -}}
+      {{- $url = .url | relURL -}}
+      {{- end -}}
+      <a class="btn btn-outline-primary btn-sm" target="_blank" href="{{ $url }}" style="font-size: 0.8rem; padding: 0.25rem 0.5rem;">
+        📎 DOI
+      </a>
+      {{ end }}
+    </div>
     {{ end }}
-    {{ end }}  
-  
-  
+  </div>
+
+  <!-- 右侧：标题和作者 -->
+  <div class="col-12 col-md-9">
+    <div class="pub-title" style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
+      
+      {{ $item.title | markdownify | safeHTML}}
     
-       
-    {{ $item.title | markdownify | safeHTML}}
-    
-    {{ $item.authors_text | markdownify | safeHTML}}
+      {{ $item.authors_text | markdownify | safeHTML}}
 
 
 
