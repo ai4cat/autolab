@@ -91,9 +91,6 @@ video_industry:
 
 
 
-
-
-
 section_repositories:
   - name: "AI4C-catalyst"
     desc: "AI-driven catalyst discovery framework with graph neural networks and high-throughput screening."
