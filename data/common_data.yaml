@@ -43,15 +43,15 @@ video_synthesis:
 
     - video_src: "videos/3.mp4"
       title: "Host–guest encapsulation"
-      text: " "
+      text: "AI-controlled robotic arm precisely assembles host–guest structures for catalyst design"
 
     - video_src: "videos/4.mp4"
       title: "Autonomous sample transfer"
-      text: " "
+      text: "Robotic Arm + AGV workflow for Opentronssample transfer"
 
     - video_src: "videos/5.mp4"
       title: "Programmable spatial calcination"
-      text: " "
+      text: "Robotic high-temperature calcination workflow for catalyst synthesis"
 
 
 video_electrocatalysis:
