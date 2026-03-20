@@ -70,30 +70,6 @@ heroSlideBlock:
           color: '#666'  
  
 
-      - title: "AI4C for Autonomous Catalyst Discovery" # desc-title1
-        content:  "An interactive visual companion featuring the robotic platform, experimental workflow, and key moments behind the paper" # desc1
-        align: left
-        background:
-          image:
-            filename: group_slides/g6.png
-            filters:
-              brightness: 1 # 0.5 #1
-          position: right
-          color: '#666'  
- 
-
-      - title: "AI4C for Autonomous Catalyst Discovery" # desc-title1
-        content:  "An interactive visual companion featuring the robotic platform, experimental workflow, and key moments behind the paper" # desc1
-        align: left
-        background:
-          image:
-            filename: group_slides/g7.png
-            filters:
-              brightness: 1 # 0.5 #1
-          position: right
-          color: '#666'  
- 
-
 
       - title: "AI4C for Autonomous Catalyst Discovery" # desc-title1
         content:  "An interactive visual companion featuring the robotic platform, experimental workflow, and key moments behind the paper" # desc1
