@@ -134,18 +134,28 @@ image_show_content: "{{< imgList image_list_var=\"images_list\" >}}"
 
 
 email_info:
-  email: chenwb@pku.edu.cn
+  email: ai4cat@outlook.com
   type: Personal Contact
   name: Dr. Weibin Chen
 
 contact1_info:
-  name: Beijing Main Campus
-  address: School of Materials Science and Engineering, Peiking University<br> No. 5 Yiheyuan Road, Haidian District, Beijing, 100871, P.R. China
+  name: Collaborate With Us
+  address: AI-driven discovery for next-generation catalysis and energy systems
+
+We welcome collaborations in AI-driven catalyst discovery, autonomous experimentation, and energy systems.
+
+AI for catalysis and materials discovery
+
+Autonomous and high-throughput experimentation
+
+Fuel cells, water electrolysis, and CO₂ conversion
+
+Industrial catalyst development and scale-up
 
 
 contact2_info:
-  name: Shenzhen Graduate School
-  address: School of Advanced Materials, Peiking University Shenzhen Graduate School <br> University Town of Shenzhen, Xili, Nanshan District, Shenzhen, 518055, P.R. China
+  name: Remote Access Laboratory
+  address: Remote access to automated synthesis, characterization, and testing platforms
 
 
 
