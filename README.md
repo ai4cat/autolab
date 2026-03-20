@@ -1,1 +1,1 @@
-# autolab
+# page configuration
