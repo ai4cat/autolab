@@ -49,7 +49,7 @@ video_synthesis:
       title: "Programmable spatial calcination"
       text: "Robotic high-temperature calcination workflow for catalyst synthesis"
 
-    - video_src: "videos/1-0.mp4"
+    - video_src: "videos/9.mp4"
       title: "AI Agent-Assisted System Orchestration"
       text: "AI-Driven Robotic Control Workflow with OpenClaw"
 
@@ -81,12 +81,13 @@ video_thermocatalysis:
       text: "Enabling automated conversion of catalyst powders into engineering forms, fixed-bed packing, programmable pressure and temperature control, online product analysis, and catalytic performance evaluation using Fixed-Bed Reactor"
 
 
-
-
-
-
-
-
+video_industry:
+  id: Insudtrial Translation
+  section_title: "Insudtrial Translation"
+  cards:
+    - video_src: "videos/8.mp4"
+      title: "Industrial Scale-Up"
+      text: "Al-driven transition from catalyst discovery to pilot-scale plant realization"
 
 
 
