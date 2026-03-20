@@ -29,10 +29,6 @@ video_synthesis:
   id: synthesis
   section_title: "Robotics-Driven High-Throughput Catalyst Synthesis"
   cards:
-    - video_src: "videos/1-0.mp4"
-      title: "AI Agent-Assisted System Orchestration"
-      text: "AI-Driven Robotic Control Workflow with OpenClaw"
-
     - video_src: "videos/1.mp4"
       title: "Automated synthesis of the MOF-74 support"
       text: "Automated synthesis"
@@ -52,6 +48,10 @@ video_synthesis:
     - video_src: "videos/5.mp4"
       title: "Programmable spatial calcination"
       text: "Robotic high-temperature calcination workflow for catalyst synthesis"
+
+    - video_src: "videos/1-0.mp4"
+      title: "AI Agent-Assisted System Orchestration"
+      text: "AI-Driven Robotic Control Workflow with OpenClaw"
 
 
 video_electrocatalysis:
