@@ -100,7 +100,7 @@ heroSlideBlock:
         align: left
         background:
           image:
-            filename: group_slides/g9.jpg
+            filename: group_slides/g9.png
             filters:
               brightness: 1 # 0.5 #1
           position: right
@@ -112,7 +112,7 @@ heroSlideBlock:
         align: left
         background:
           image:
-            filename: group_slides/g10.jpg
+            filename: group_slides/g10.png
             filters:
               brightness: 1 # 0.5 #1
           position: right
