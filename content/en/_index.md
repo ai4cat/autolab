@@ -141,10 +141,6 @@ email_info:
 contact1_info:
   name: Collaborate With Us
   address: We welcome collaborations in AI-driven catalyst discovery, autonomous experimentation, and energy systems
-   AI for catalysis and materials discovery
-   Autonomous and high-throughput experimentation
-   Fuel cells, water electrolysis, and CO₂ conversion
-   Industrial catalyst development and scale-up
 
 
 contact2_info:
