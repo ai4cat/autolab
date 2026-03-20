@@ -9,9 +9,9 @@ main:
 #    url: #about
 #    weight: 30
 
-  - name: Overview
-    url: "#overview"
-    weight: 40
+  # - name: Overview
+  #   url: "#overview"
+  #   weight: 40
 
   - name: Synthesis
     url: "#synthesis"
