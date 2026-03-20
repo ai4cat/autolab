@@ -30,45 +30,45 @@ video_synthesis:
   section_title: "Robotics-Driven High-Throughput Catalyst Synthesis"
   cards:
     - video_src: "videos/1-0.mp4"
-      title: "AI-Driven Robotic "
+      title: "AI Agent-Assisted System Orchestration"
       text: "AI-Driven Robotic Control Workflow with OpenClaw"
 
-    - video_src: "videos/1-1.mp4"
-      title: "Automated synthesis"
-      text: "Automated synthesis of the MOF-74 support"
+    - video_src: "videos/1.mp4"
+      title: "Automated synthesis of the MOF-74 support"
+      text: "Automated synthesis"
 
-    - video_src: "videos/1-2.mp4"
-      title: "AI-Driven Robotic "
-      text: "Automated synthesis of the heterometallic La–Ce complex precursor"
+    - video_src: "videos/2.mp4"
+      title: "Automated synthesis of the heterometallic La–Ce complex precursor"
+      text: "Automated synthesis"
 
-    - video_src: "videos/1-3.mp4"
+    - video_src: "videos/3.mp4"
       title: "Host–guest encapsulation"
-      text: "Host–guest encapsulation"
+      text: " "
 
-    - video_src: "videos/1-3.mp4"
-      title: "Autonomous"
-      text: "Autonomous sample transfer"
+    - video_src: "videos/4.mp4"
+      title: "Autonomous sample transfer"
+      text: " "
 
-    - video_src: "videos/1-5.mp4"
-      title: "Programmable"
-      text: "Programmable spatial calcination"
+    - video_src: "videos/5.mp4"
+      title: "Programmable spatial calcination"
+      text: " "
 
 
 video_electrocatalysis:
   id: electrocatalysis
   section_title: "Electrocatalysis"
   cards:
-    - video_src: "videos/2-1.mp4"
+    - video_src: "videos/6.mp4"
       title: "Robotics-Driven High-Throughput Electrochemical Performance Evaluations"
       text: "Automated Catalyst Ink Preparation, Electrode Fabrication, High-Throughput RRDE Measurements, and Data Analysis"
 
-    - video_src: "videos/2-2.mp4"
+    - video_src: "videos/7.mp4"
       title: "Robotics-Driven Device-Level Performance Validation (MEA)"
       text: "Automated Assembly of Membrane Electrode Assemblies and Fuel Cell Testing"
 
-    - video_src: "videos/2-3.mp4"
-      title: "AI Agent-Assisted System Orchestration"
-      text: "Integrating automated synthesis, automated performance evaluation, LLM-driven literature mining, and high-throughput computation"
+    # - video_src: "videos/2-3.mp4"
+    #   title: "AI Agent-Assisted System Orchestration"
+    #   text: "Integrating automated synthesis, automated performance evaluation, LLM-driven literature mining, and high-throughput computation"
 
 
 
