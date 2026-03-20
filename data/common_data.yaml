@@ -1,28 +1,28 @@
 # 多个视频轮播组
 
-video_overview_platform:
-  id: overview
-  section_title: "Platform overview"
-  cards:
-    - video_src: "videos/h1.mp4"
-      title: "Video1"
-      text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
+# video_overview_platform:
+#   id: overview
+#   section_title: "Platform overview"
+#   cards:
+#     - video_src: "videos/h1.mp4"
+#       title: "Video1"
+#       text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
 
-    - video_src: "videos/h2.mp4"
-      title: "Video2"
-      text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
+#     - video_src: "videos/h2.mp4"
+#       title: "Video2"
+#       text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
 
-    - video_src: "videos/h1.mp4"
-      title: "Video3"
-      text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
+#     - video_src: "videos/h1.mp4"
+#       title: "Video3"
+#       text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
 
-    - video_src: "videos/h2.mp4"
-      title: "Video4"
-      text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
+#     - video_src: "videos/h2.mp4"
+#       title: "Video4"
+#       text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
 
-    - video_src: "videos/h1.mp4"
-      title: "Video5"
-      text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
+#     - video_src: "videos/h1.mp4"
+#       title: "Video5"
+#       text: "Building autonomous robotic platforms for catalyst discovery and electrochemical systems"
 
 
 video_synthesis:
