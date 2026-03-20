@@ -90,7 +90,7 @@ heroSlideBlock:
           image:
             filename: group_slides/g10.png
             filters:
-              brightness: 1 # 0.5 #1
+              brightness: 1 # 1 #1
           position: right
           color: '#666'  
 
