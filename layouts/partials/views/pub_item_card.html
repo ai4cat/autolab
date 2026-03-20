@@ -1,29 +1,33 @@
 {{ $item := . }}
 
-<div class="pub-list-item card-simple view-card"  style="margin-bottom: 1rem" >
-  <div class="article-metadata">
-    <div>
-      {{ $item.author_text | markdownify | safeHTML}}
+
+<div class="paper-item row view-citation" style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+
+  <!-- 左侧：期刊和DOI -->
+  <div class="col-12 col-md-3 mb-2 mb-md-0">
+    <div class="pub-journal" style="font-weight: 600; color: #c62828; margin-bottom: 0.5rem;">
+      {{ $item.journal | markdownify | safeHTML}} ({{$item.year}})
     </div>
-    <span class="pub-publication">{{ $item.publication_info | markdownify | safeHTML}}</span>
-  </div>
-  <div class="section-subheading article-title mb-1 mt-3">
-    <sapn class="pub-journal">[{{ $item.journal | markdownify | safeHTML}}] </sapn>
-    <sapn class="pub-title">{{ $item.title | markdownify | safeHTML}}</sapn><br>
-  </div>
+    {{ if $item.links}}
+      <div class="pub-links">
+        {{ range $item.links }}
+          {{- $url := .url -}}
+          {{- if eq .link_type "local" -}}
+            {{- $url = .url | relURL -}}
+          {{- end -}}
+          <a class="btn btn-outline-primary btn-sm" target="_blank" href="{{ $url }}" 
+             style="font-size: 0.8rem; padding: 0.25rem 0.5rem;">
 
-  {{ if $item.links}}
-    <p>
-      {{ range $item.links }}
-        {{- $url := .url -}}
-        {{- if eq .link_type "local" -}}
-          {{- $url = .url | relURL -}}
-        {{- end -}}
-        <a class="btn btn-outline-primary btn-page-header btn-sm" target="_blank" href="{{ $url }}">{{ .text }}</a>
-      {{ end }}
-    </p>
-  {{ end }}
-
+          
+    {{ end }}
+    {{ end }}  
+  
+  
+    
+       
+    {{ $item.title | markdownify | safeHTML}}
+    
+    {{ $item.authors_text | markdownify | safeHTML}}
 
 
 
