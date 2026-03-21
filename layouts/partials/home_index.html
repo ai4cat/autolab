@@ -60,11 +60,14 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
 
 
 {{/*"video_overview_platform"*/}}
-{{ $video_groups := slice
+{{/* $video_groups := slice
       "video_synthesis"
       "video_electrocatalysis"
       "video_thermocatalysis"
-}}
+      "video_thermocatalysis"
+*/}}
+
+    {{ $video_groups := site.Data.common_data.to_show_videos }}
 
     {{ range $g_index, $g_item := $video_groups }}
 
@@ -146,9 +149,23 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
 
 
           <div class="paper-item">
-            <span class="paper-venue">{{ $item.journal | markdownify | safeHTML}} · {{$item.year}}</span>
+            {{/*<span class="paper-venue">{{ $item.journal | markdownify | safeHTML}} · {{$item.year}}</span>*/}}
+            <div class="paper-journal d-flex justify-content-between align-items-center">
+              <div class="paper-venue">{{ $item.journal | markdownify | safeHTML}} · {{$item.year}}</div>
+              <div class="paper-links btn-links">
+                {{ range $l_index, $l_item := $item.links }}
+                  <a class="  "
+                     target="_blank"
+                     href="{{$l_item.url}}">
+                    [{{$l_item.text | markdownify | safeHTML}}]
+                  </a>
+                {{end }}
+              </div>
+            </div>
             <div class="paper-title">{{ $item.title | markdownify | safeHTML}}</div>
             <div class="paper-authors">{{ $item.authors_text | markdownify | safeHTML}}</div>
+
+
           </div>
 
         {{ end }}
@@ -164,37 +181,66 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
       <!-- 联系信息网格 (名片格式) -->
       <div class="row home-content-wrap" style="padding: 1rem 0;">
 
-        <div class=" col-12 col-md-4">
+
+        {{/*<div class=" col-12 col-md-4">
           <div class="contact-item paper-item ">
             <div class="contact-icon"><i class="fas fa-envelope"></i></div>
             <h4>{{.Params.email_info.name | markdownify }}</h4>
             <p>{{.Params.email_info.email | markdownify }}<br>
               <span style="color: #94a3b8; font-size: 0.85rem;">{{.Params.email_info.type | markdownify }}</span></p>
-            {{/*<p style="margin-top: 0.5rem;"><a href="mailto:pi.ai4c@pku.edu.cn">pi.ai4c@pku.edu.cn</a><br>
-          <span style="color: #94a3b8; font-size: 0.85rem;">PI 联系</span></p>*/}}
           </div>
-        </div>
+        </div>*/}}
+
+
 
 
 
 
         <div class=" col-12 col-md-4">
-          <div class="contact-item paper-item ">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <h4>{{.Params.contact1_info.name | markdownify }}</h4>
-            <p>{{.Params.contact1_info.address | markdownify }}</p>
-          </div>
-        </div>
-
-
-
-
-        <div class=" col-12 col-md-4">
-
           <div class="contact-item paper-item   ">
-            <div class="contact-icon"><i class="fas fa-map-pin"></i></div>
-            <h4>{{.Params.contact2_info.name | markdownify }}</h4>
-            <p>{{.Params.contact2_info.address | markdownify }}</p>
+            <div class="d-flex">
+              <div class="contact-icon">
+                <i class=" fas fa-handshake"></i>
+              </div>
+              <h4 class="c-title">{{.Params.contact1_info.name | markdownify }}</h4>
+            </div>
+            <div class="c-desc-text">
+              {{.Params.contact1_info.address | markdownify }}
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class=" col-12 col-md-4">
+          <div class="contact-item paper-item   ">
+            <div class="d-flex">
+              <div class="contact-icon">
+                <i class="fas fa-flask"></i>
+              </div>
+              <h4 class="c-title">{{.Params.contact2_info.name | markdownify }}</h4>
+            </div>
+            <div class="c-desc-text">
+              {{.Params.contact2_info.address | markdownify }}
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class=" col-12 col-md-4">
+          <div class="contact-item paper-item   ">
+            <div class="d-flex">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h4 class="c-title">{{.Params.email_info.name | markdownify }}</h4>
+            </div>
+            <div class="c-desc-text">
+              {{.Params.email_info.address | markdownify }}
+            </div>
+
           </div>
         </div>
 

@@ -157,10 +157,29 @@ image_show_content: "{{< imgList image_list_var=\"images_list\" >}}"
 
 
 
+#email_info:
+#  email: ai4cat@outlook.com
+#  type: Personal Contact
+#  name: Dr. Weibin Chen
+#
+#contact1_info:
+#  name: Collaborate With Us
+#  address: We welcome collaborations in AI-driven catalyst discovery, autonomous experimentation, and energy systems
+#
+#
+#contact2_info:
+#  name: Remote Access Laboratory
+#  address: Remote access to automated synthesis, characterization, and testing platforms
+
+
+
 email_info:
-  email: ai4cat@outlook.com
-  type: Personal Contact
   name: Dr. Weibin Chen
+  address: | 
+    Email: ai4cat@outlook.com
+    
+    Welcome to contact us.
+  
 
 contact1_info:
   name: Collaborate With Us
@@ -169,7 +188,12 @@ contact1_info:
 
 contact2_info:
   name: Remote Access Laboratory
-  address: Remote access to automated synthesis, characterization, and testing platforms
+  address: |
+    Our Al laboratory supports remote access to automated synthesis and testing platforms.
+    - Al for catalysis and materials discovery
+    - Autonomous and high-throughput experimentation
+    - Fuel cells, water electrolysis, and CO2 conversion
+    - Industrial catalyst development and scale-up
 
 
 
