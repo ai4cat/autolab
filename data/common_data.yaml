@@ -82,15 +82,12 @@ video_thermocatalysis:
 
 
 video_industry:
-  id: Insudtrial Translation
+  id: industrial_translation
   section_title: "Insudtrial Translation"
   cards:
     - video_src: "videos/8.mp4"
       title: "Industrial Scale-Up"
       text: "Al-driven transition from catalyst discovery to pilot-scale plant realization"
-
-
-
 
 
 
@@ -107,3 +104,12 @@ section_repositories:
     desc: "AI-driven catalyst discovery framework with graph neural networks and high-throughput screening."
     url: "https://github.com/ai4m2026/ai4m"
 
+
+
+# ------------- Specify which videos to Show ----------- >>
+to_show_videos:
+  - video_synthesis
+  - video_electrocatalysis
+  - video_thermocatalysis
+  - video_industry
+# ------------- Specify which videos to Show ----------- <<

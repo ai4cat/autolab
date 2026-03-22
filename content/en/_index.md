@@ -39,7 +39,7 @@ heroSlideBlock:
         align: left
         background:
           image:
-            filename: group_slides/g3.png
+            filename: group_slides/g1.png
             filters:
               brightness: 1 # 0.5 #1
           position: right
@@ -56,6 +56,31 @@ heroSlideBlock:
               brightness: 1 # 0.5 #1
           position: right
           color: '#666'  
+
+ 
+      - title: "AI4C for Autonomous Catalyst Discovery" # desc-title1
+        content:  "An interactive visual companion featuring the robotic platform, experimental workflow, and key moments behind the paper" # desc1
+        align: left
+        background:
+          image:
+            filename: group_slides/g3.png
+            filters:
+              brightness: 1 # 0.5 #1
+          position: right
+          color: '#666'  
+ 
+
+
+      - title: "AI4C for Autonomous Catalyst Discovery" # desc-title1
+        content:  "An interactive visual companion featuring the robotic platform, experimental workflow, and key moments behind the paper" # desc1
+        align: left
+        background:
+          image:
+            filename: group_slides/g9.png
+            filters:
+              brightness: 1 # 0.5 #1
+          position: right
+          color: '#666'  
  
 
       - title: "AI4C for Autonomous Catalyst Discovery" # desc-title1
@@ -63,12 +88,11 @@ heroSlideBlock:
         align: left
         background:
           image:
-            filename: group_slides/g1.png
+            filename: group_slides/g10.png
             filters:
-              brightness: 1 # 0.5 #1
+              brightness: 1 # 1 #1
           position: right
           color: '#666'  
- 
 
   design:
     # Slide height is automatic unless you force a specific height (e.g. '400px')
@@ -133,19 +157,43 @@ image_show_content: "{{< imgList image_list_var=\"images_list\" >}}"
 
 
 
+#email_info:
+#  email: ai4cat@outlook.com
+#  type: Personal Contact
+#  name: Dr. Weibin Chen
+#
+#contact1_info:
+#  name: Collaborate With Us
+#  address: We welcome collaborations in AI-driven catalyst discovery, autonomous experimentation, and energy systems
+#
+#
+#contact2_info:
+#  name: Remote Access Laboratory
+#  address: Remote access to automated synthesis, characterization, and testing platforms
+
+
+
 email_info:
-  email: chenwb@pku.edu.cn
-  type: Personal Contact
   name: Dr. Weibin Chen
+  address: | 
+    Email: ai4cat@outlook.com
+    
+    Welcome to contact us.
+  
 
 contact1_info:
-  name: Beijing Main Campus
-  address: School of Materials Science and Engineering, Peiking University<br> No. 5 Yiheyuan Road, Haidian District, Beijing, 100871, P.R. China
+  name: Collaborate With Us
+  address: We welcome collaborations in AI-driven catalyst discovery, autonomous experimentation, and energy systems
 
 
 contact2_info:
-  name: Shenzhen Graduate School
-  address: School of Advanced Materials, Peiking University Shenzhen Graduate School <br> University Town of Shenzhen, Xili, Nanshan District, Shenzhen, 518055, P.R. China
+  name: Remote Access Laboratory
+  address: |
+    Our Al laboratory supports remote access to automated synthesis and testing platforms.
+    - Al for catalysis and materials discovery
+    - Autonomous and high-throughput experimentation
+    - Fuel cells, water electrolysis, and CO2 conversion
+    - Industrial catalyst development and scale-up
 
 
 
